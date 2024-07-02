@@ -29,8 +29,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
-          key: composer-php-${{ matrix.php }}-${{ hashFiles('composer.json') }}
-          restore-keys: composer-php-${{ matrix.php }}-
+          key: composer-php${{ matrix.php }}-${{ hashFiles('composer.json') }}
+          restore-keys: composer-php${{ matrix.php }}-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
