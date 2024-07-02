@@ -19,7 +19,7 @@ jobs:
             testbench: 9.*
           - laravel: 10.*
             testbench: 8.*
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.testsuite }} - ${{ matrix.dependency-version }}
+    name: ${{ matrix.testsuite }} - P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
     steps:
       - uses: actions/checkout@v4
       - name: Cache dependencies
