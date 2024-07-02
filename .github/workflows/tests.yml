@@ -12,7 +12,7 @@ jobs:
       matrix:
         php: [8.3, 8.2]
         laravel: [11.*, 10.*]
-        dependency-version: [prefer-stable, prefer-lowest]
+        dependency-version: [prefer-stable]
         testsuite: [admin, core, opayo, stripe, shipping]
         include:
           - laravel: 11.*
